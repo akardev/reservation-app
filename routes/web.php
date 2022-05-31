@@ -21,8 +21,6 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/',[WelcomeController::class,'index']);
 
-
-Route::get('/', [WelcomeController::class, 'index']);
 Route::get('/categories', [FrontCategoryController::class, 'index'])->name('categories.index');
 Route::get('/categories/{category}', [FrontCategoryController::class, 'show'])->name('categories.show');
 Route::get('/menus', [FrontMenuController::class, 'index'])->name('menus.index');
